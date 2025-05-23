@@ -2,13 +2,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/about-team.css'; // <- we will create this
+import teamMember1 from '../assets/images/team/team-member1.jpg';
+import teamMember2 from '../assets/images/team/team-member2.jpg';
+import teamMember3 from '../assets/images/team/team-member3.jpg';
+
 
 const teamMembers = [
-  { name: 'John Tan', role: 'Founder & CEO' },
-  { name: 'Alicia Lim', role: 'Head of Operations' },
-  { name: 'David Lee', role: 'Logistics Manager' },
-  { name: 'Samantha Ong', role: 'Client Relations Manager' },
-  { name: 'Ryan Goh', role: 'Finance & Compliance Lead' },
+  { name: 'Abdulaliz Abdurakhmanov', role: 'Founder', image: teamMember1 },
+  { name: 'Guzal Yusupova', role: 'Head of Finance Department', image: teamMember2 },
+  { name: 'Dilovar Kalandarov', role: 'Managing Director', image: teamMember3 },
 ];
 
 const AboutTeam = () => {
@@ -25,9 +27,9 @@ const AboutTeam = () => {
           <div key={index} className="team-card">
             <div className="team-image">
               {/* Placeholder circle for now */}
-              <div className="circle-placeholder">{member.name.charAt(0)}</div>
+              <img src={member.image} alt={member.name} className="team-photo" />
             </div>
-            <h3>{member.name}</h3>
+            <h2>{member.name}</h2>
             <p>{member.role}</p>
           </div>
         ))}

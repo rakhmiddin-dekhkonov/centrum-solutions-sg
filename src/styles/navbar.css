@@ -80,3 +80,14 @@
   color: #d50032;
   text-decoration: none;
 }
+
+.dropdown-menu {
+  list-style: none; /* removes dots */
+  margin: 0;
+  padding: 8px 0;
+}
+
+.active-link {
+  color: #d50032 !important;
+  font-weight: bold;
+}

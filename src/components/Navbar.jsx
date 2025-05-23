@@ -1,33 +1,74 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">Centrum Solutions</Link>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+          Centrum Solutions
+        </NavLink>
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
+        <li>
+          <NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+            Home
+          </NavLink>
+        </li>
+
         <li className="dropdown">
           <span>About Us</span>
           <ul className="dropdown-menu">
-            <li><Link to="/about/company">Our Company</Link></li>
-            <li><Link to="/about/team">Our Team</Link></li>
+            <li>
+              <NavLink to="/about/company" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+                Our Company
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about/team" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+                Our Team
+              </NavLink>
+            </li>
           </ul>
         </li>
+
         <li className="dropdown">
           <span>Products</span>
           <ul className="dropdown-menu">
-            <li><Link to="/products/aerospace">Aerospace</Link></li>
-            <li><Link to="/products/multimodal-cargo">Multimodal Cargo</Link></li>
-            <li><Link to="/products/dangerous-goods">Dangerous Goods</Link></li>
-            <li><Link to="/products/valuable-goods">Valuable Goods</Link></li>
+            <li>
+              <NavLink to="/products/aerospace" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+                Aerospace
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/products/multimodal-cargo" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+                Multimodal Cargo
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/products/dangerous-goods" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+                Dangerous Goods
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/products/valuable-goods" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+                Valuable Goods
+              </NavLink>
+            </li>
           </ul>
         </li>
-        <li><Link to="/network">Network</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+
+        <li>
+          <NavLink to="/network" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+            Network
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+            Contact Us
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

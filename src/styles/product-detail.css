@@ -1,32 +1,95 @@
-.page-header {
-  text-align: center;
-  padding: 60px 20px 20px;
+.product-detail-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
-.page-header h1 {
+/* Hero */
+.product-hero {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-hero .overlay {
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+.product-hero h1 {
   color: #d50032;
   font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.product-description {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px;
+.product-hero p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+}
+
+
+/* Section */
+.product-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.product-content p {
   font-size: 16px;
-  line-height: 1.7;
-  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 30px;
 }
 
 .product-features {
   list-style: none;
-  margin-top: 30px;
   padding-left: 0;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .product-features li {
-  background: url('https://cdn-icons-png.flaticon.com/512/32/32355.png') no-repeat left center;
-  background-size: 20px;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  text-align: left;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Button */
+.learn-more-button {
+  background-color: #d50032;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #b30029;
 }

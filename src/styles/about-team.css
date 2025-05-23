@@ -10,7 +10,7 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 3fr));
   gap: 30px;
   padding: 60px 40px;
   justify-items: center;
@@ -34,6 +34,14 @@
   margin-bottom: 15px;
 }
 
+.team-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 .circle-placeholder {
   width: 80px;
   height: 80px;
@@ -48,13 +56,13 @@
   margin: 0 auto;
 }
 
-.team-card h3 {
+.team-card h2 {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 24px;
   color: #d50032;
 }
 
 .team-card p {
-  font-size: 15px;
+  font-size: 20px;
   color: #555;
 }
