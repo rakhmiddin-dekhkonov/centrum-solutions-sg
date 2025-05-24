@@ -73,9 +73,9 @@ const Contact = () => {
 
         <div className="contact-info">
           <h2 className='contact-info-header'>Centrum Solutions Pte Ltd</h2>
-          <p>Address: 123 Cargo Way, Singapore 567890</p>
-          <p>Phone: +65 1234 5678</p>
-          <p>Email: info@centrumsolutions.com</p>
+          <p>Address: 1 ONE-NORTH CRESCENT #07-05 (S) 138538</p>
+          <p>Phone: +65 82676433</p>
+          <p>Email: d.kalandarov@centrum-solutions.net</p>
 
           <div className="social-links">
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /> LinkedIn</a>
