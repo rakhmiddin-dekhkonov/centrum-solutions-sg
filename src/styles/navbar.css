@@ -35,6 +35,7 @@
   transition: 0.3s;
 }
 
+
 .nav-links a:hover,
 .nav-links span:hover {
   color: #d50032; /* Bright red on hover */
@@ -87,7 +88,16 @@
   padding: 8px 0;
 }
 
-.active-link {
+.navbar-logo a.logo-text {
+  font-size: 26px;
   color: #d50032 !important;
   font-weight: bold;
+  text-decoration: none;
+}
+
+
+.active-link,
+.active-parent > span {
+  color: #d50032 !important;
+  font-weight: 600;
 }

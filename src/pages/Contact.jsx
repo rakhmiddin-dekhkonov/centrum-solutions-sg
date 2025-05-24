@@ -1,6 +1,9 @@
 // src/pages/Contact.jsx
 import React, { useState } from 'react';
 import '../styles/contact.css';
+import { FaLinkedin, FaInstagram, FaFacebookF, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -69,15 +72,15 @@ const Contact = () => {
         </div>
 
         <div className="contact-info">
-          <h3>Centrum Solutions Pte Ltd</h3>
+          <h2 className='contact-info-header'>Centrum Solutions Pte Ltd</h2>
           <p>Address: 123 Cargo Way, Singapore 567890</p>
           <p>Phone: +65 1234 5678</p>
           <p>Email: info@centrumsolutions.com</p>
 
           <div className="social-links">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /> LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /> Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebookF size={30} /> Facebook</a>
           </div>
         </div>
       </section>

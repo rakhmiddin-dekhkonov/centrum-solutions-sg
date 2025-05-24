@@ -1,11 +1,11 @@
 .page-header {
   text-align: center;
-  padding: 60px 20px 20px;
+  padding: 50px 20px;
 }
 
 .page-header h1 {
   color: #d50032;
-  font-size: 36px;
+  font-size: 45px;
 }
 
 .contact-intro {
@@ -13,7 +13,7 @@
   margin: 0 auto;
   padding: 20px 40px;
   text-align: center;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 1.7;
 }
 
@@ -74,30 +74,36 @@
   max-width: 400px;
 }
 
-.contact-info h3 {
+.contact-info-header {
   color: #d50032;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .contact-info p {
-  font-size: 15px;
+  font-size: 20px;
   color: #555;
   margin-bottom: 10px;
 }
 
 .social-links {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: #d50032;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  text-decoration: underline;
+  color: #a80027;
 }

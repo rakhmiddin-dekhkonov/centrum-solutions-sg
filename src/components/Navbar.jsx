@@ -1,15 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import '../styles/navbar.css';
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const isAboutActive = location.pathname.startsWith('/about');
+  const isProductsActive = location.pathname.startsWith('/products');
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : undefined}>
+        <NavLink to="/" className="logo-text">
           Centrum Solutions
         </NavLink>
       </div>
+
       <ul className="nav-links">
         <li>
           <NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : undefined}>
@@ -17,7 +23,7 @@ const Navbar = () => {
           </NavLink>
         </li>
 
-        <li className="dropdown">
+        <li className={`dropdown ${isAboutActive ? 'active-parent' : ''}`}>
           <span>About Us</span>
           <ul className="dropdown-menu">
             <li>
@@ -33,7 +39,7 @@ const Navbar = () => {
           </ul>
         </li>
 
-        <li className="dropdown">
+        <li className={`dropdown ${isProductsActive ? 'active-parent' : ''}`}>
           <span>Products</span>
           <ul className="dropdown-menu">
             <li>
