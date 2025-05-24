@@ -110,3 +110,96 @@
 .learn-more-button:hover {
   background-color: #b30029;
 }
+
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .about-intro {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .value-card p {
+    font-size: 17px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .about-intro {
+    font-size: 17px;
+    padding: 20px 16px;
+  }
+
+  .company-stats {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .stat-card {
+    padding: 30px 16px;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+
+  .value-card {
+    min-width: 220px;
+    max-width: 100%;
+    padding: 24px 18px;
+  }
+
+  .value-card h3 {
+    font-size: 20px;
+  }
+
+  .value-icon {
+    font-size: 28px;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .about-intro {
+    font-size: 16px;
+    padding: 20px 12px;
+  }
+
+  .company-stats {
+    grid-template-columns: 1fr;
+    padding: 30px 16px;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+
+  .about-values {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+
+  .value-card {
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .learn-more-button {
+    width: 80%;
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+}

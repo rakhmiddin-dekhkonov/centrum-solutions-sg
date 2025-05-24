@@ -66,3 +66,84 @@
   font-size: 20px;
   color: #555;
 }
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .team-grid {
+    gap: 24px;
+    padding: 50px 30px;
+  }
+
+  .team-photo {
+    width: 260px;
+    height: 260px;
+  }
+
+  .team-card h2 {
+    font-size: 22px;
+  }
+
+  .team-card p {
+    font-size: 18px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 40px 20px;
+  }
+
+  .team-photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .team-card h2 {
+    font-size: 20px;
+  }
+
+  .team-card p {
+    font-size: 17px;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    padding: 30px 16px;
+    gap: 20px;
+  }
+
+  .team-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .team-card h2 {
+    font-size: 18px;
+  }
+
+  .team-card p {
+    font-size: 16px;
+  }
+
+  .circle-placeholder {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .learn-more-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 80%;
+  }
+}
+

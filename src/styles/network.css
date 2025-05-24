@@ -82,3 +82,84 @@
   font-size: 16px;
 }
 
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .page-header h1 {
+    font-size: 34px;
+  }
+
+  .network-intro {
+    font-size: 18px;
+    padding: 20px 30px;
+  }
+
+  .map-container {
+    height: 400px;
+  }
+
+  .destinations-section {
+    gap: 30px;
+    padding: 50px 30px;
+  }
+
+  .destinations-group h2 {
+    font-size: 22px;
+  }
+
+  .destinations-group li {
+    font-size: 18px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .network-intro {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .map-container {
+    height: 350px;
+  }
+
+  .destinations-section {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 25px;
+  }
+
+  .destinations-group {
+    text-align: center;
+  }
+
+  .destinations-group li {
+    justify-content: center;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .map-container {
+    height: 300px;
+    width: 95%;
+  }
+
+  .destinations-group h2 {
+    font-size: 20px;
+  }
+
+  .destinations-group li {
+    font-size: 16px;
+    justify-content: flex-start;
+  }
+
+  .network-intro {
+    padding: 20px 16px;
+    font-size: 15px;
+  }
+}
+

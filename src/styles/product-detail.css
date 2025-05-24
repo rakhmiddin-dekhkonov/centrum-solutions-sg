@@ -94,3 +94,80 @@
 .learn-more-button:hover {
   background-color: #b30029;
 }
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .product-info-section {
+    padding: 50px 30px;
+    gap: 30px;
+  }
+
+  .product-hero h1 {
+    font-size: 32px;
+  }
+
+  .product-hero p {
+    font-size: 18px;
+  }
+
+  .product-content p,
+  .product-features {
+    font-size: 15px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .product-info-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .product-image,
+  .product-content {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .product-hero h1 {
+    font-size: 28px;
+  }
+
+  .product-hero p {
+    font-size: 17px;
+  }
+
+  .learn-more-button {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .product-detail-page {
+    padding: 40px 16px;
+  }
+
+  .product-hero h1 {
+    font-size: 24px;
+  }
+
+  .product-hero p {
+    font-size: 16px;
+  }
+
+  .product-content p,
+  .product-features li {
+    font-size: 14px;
+  }
+
+  .product-info-section {
+    padding: 30px 16px;
+    gap: 20px;
+  }
+
+  .learn-more-button {
+    font-size: 15px;
+  }
+}
